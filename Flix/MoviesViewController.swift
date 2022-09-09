@@ -27,15 +27,15 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
              if let error = error {
                     print(error.localizedDescription)
              } else if let data = data {
-                    let dataDictionary = try! JSONSerialization.jsonObject(with: data, options: []) as! [String: Any]
 
                  
+                    // TODO: Get the array of movies
+                 let dataDictionary = try! JSONSerialization.jsonObject(with: data, options: []) as! [String: Any]
+                 
+                    // TODO: Store the movies in a property to use elsewhere
                  self.movies = dataDictionary["results"] as! [[String : Any]]
                  
-                    // TODO: Get the array of movies
-                    // TODO: Store the movies in a property to use elsewhere
                     // TODO: Reload your table view data
-                 
                  self.tableView.reloadData()
              }
         }
@@ -69,7 +69,7 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
     }
     
     func moviePosterURLFrom(path: String) -> URL {
-        let baseUrl = "https://image.tmdb.org/t/p/original"
+        let baseUrl = "https://image.tmdb.org/t/p/w500"
         let posterURL = URL(string: baseUrl + path)
 
         return posterURL!
