@@ -9,4 +9,6 @@ import Foundation
 
 struct Constants {
     static let tableViewCell = "MovieCell"
+    static let collectionViewCell = "MovieGridCell"
+    static let videoSegue = "showVideoSegue"
 }
