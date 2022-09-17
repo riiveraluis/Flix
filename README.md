@@ -16,6 +16,8 @@ Flix is an app that allows users to browse movies from the [The Movie Database A
 
 ### App Walkthrough GIF
 
+![](https://github.com/riiveraluis/Flix/blob/main/Part%202%20GIF/Demo%20Part%202.gif)
+
 ### Notes
 During this second part, knowing AutoLayout is a must to make sure the interface work on multiple devices. The thing that challenged me in a good way is exploring how the Movie Database API works and extracting certain data from it.
 
